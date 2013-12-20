@@ -1,0 +1,23 @@
+/** Inspired by: http://graphicburger.com/flat-design-ui-components/ **/
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+.main-container {
+	font-family: 'Ubuntu', sans-serif;
+}
+/**
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+**/
