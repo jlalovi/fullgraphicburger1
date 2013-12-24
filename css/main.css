@@ -66,8 +66,21 @@ ul {
 	padding-left: 0;
 }
 
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+}
+
 a {
 	text-decoration: none;
+	font-size: 15px;
 }
 	a:hover {
 		text-decoration: underline;
@@ -121,16 +134,71 @@ h1, h2, p, a, span{
 }	
 	/** HEADER **/
 	header {
-		border: 1px solid yellow; /** TO DELETE **/
 		background: #394264;
 		height: 80px;
 		margin-bottom: 25px;
 	}
+		.header-menu {
+			font-size: 17px;
+			line-height: 80px;
+		}
+			.header-menu li {
+				position: relative;
+			}
+				.header-menu-tab {
+					padding: 30px 25px 27px;
+					font-size: 17px;
+					-webkit-transition: background .3s;
+					transition: background .3s;
+				}
+					.header-menu-tab:hover {
+						background: #50597b;
+						text-decoration: none;
+					}
+					.header-menu-tab .icon {
+						padding-right: 15px;
+						font-size: 24px;
+					}
+				.header-menu-number {
+					position: absolute;
+					line-height: 22px;
+					padding: 0 6px;
+					font-weight: 700;
+					background: #e64c65;
+					border-radius: 100%;
+					top: 15px;
+					right: 2px;
+				}
+					.header-menu-number:hover {
+						text-decoration: none;
+						background: #DF2040;
+					}
+		.profile-menu {
+			float: right;
+			height: 80px;
+			padding-right: 20px;
+		}
+			.profile-menu p {
+				font-size: 17px;
+				display: inline-block;
+				line-height: 76px;
+				margin: 0;
+				padding-right: 10px;
+			}
+				.profile-menu a {
+					padding-left: 5px;
+				}
+					.profile-menu a:hover {
+						text-decoration: none;
+					}
+			.small-profile-picture {
+				display: inline-block;
+				vertical-align: middle;				
+			}
 	/** CONTAINERS **/
 	.container {
 		float: left;
 		width: 300px;
-		border: 1px solid yellow; /** TO DELETE **/
 	}
 		.block {
 			margin-bottom: 25px;
