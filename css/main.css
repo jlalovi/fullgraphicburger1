@@ -63,6 +63,7 @@ body {
 
 ul {
 	list-style-type: none;
+	margin: 0;
 	padding-left: 0;
 }
 
@@ -106,6 +107,17 @@ h1, h2, p, a, span{
 	clear: both;
 }
 
+.icon {
+	font-size: 25px;
+}
+
+.titular {
+	display: block;
+	line-height: 60px;
+	margin: 0;
+	text-align: center;
+}
+
 .profile-picture {
 	border-radius: 100%;
 	overflow: hidden;
@@ -146,7 +158,7 @@ h1, h2, p, a, span{
 				position: relative;
 			}
 				.header-menu-tab {
-					padding: 30px 25px 27px;
+					padding: 30px 27px 27px;
 					font-size: 17px;
 					-webkit-transition: background .3s;
 					transition: background .3s;
@@ -157,7 +169,6 @@ h1, h2, p, a, span{
 					}
 					.header-menu-tab .icon {
 						padding-right: 15px;
-						font-size: 24px;
 					}
 				.header-menu-number {
 					position: absolute;
@@ -168,10 +179,14 @@ h1, h2, p, a, span{
 					border-radius: 100%;
 					top: 15px;
 					right: 2px;
+					-webkit-transition: all .3s linear;
+					transition: all .3s linear;
 				}
-					.header-menu-number:hover {
+					.header-menu li:hover .header-menu-number {
 						text-decoration: none;
-						background: #DF2040;
+						-webkit-transform: rotate(360deg);
+						transform: rotate(360deg);
+
 					}
 		.profile-menu {
 			float: right;
@@ -203,13 +218,54 @@ h1, h2, p, a, span{
 		.block {
 			margin-bottom: 25px;
 			background: #394264;
-			border: 1px solid red; /** TO DELETE **/
 		}
 		/** LEFT CONTAINER **/
 		.left-container {}
 			.menu-box {
 				height: 360px;
 			}
+				.menu-box .titular {
+					background: #11a8ab;
+				}
+				.menu-box-menu .icon {
+					display: inline-block;
+					vertical-align: top;
+					width: 28px;
+					margin-left: 20px;
+					margin-right: 15px;
+				}
+				.menu-box-number {
+					width: 36px;
+					line-height: 22px;
+					background: #50597b;
+					text-align: center;
+					border-radius: 15px;
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					-webkit-transition: all .3s;
+					transition: all .3s;
+				}
+				.menu-box-menu li{
+					height: 60px;
+					position: relative;					
+				}
+				.menu-box-tab {
+					line-height: 60px;
+					display: block;
+					-webkit-transition: all .3s;
+					transition: all .3s;
+				}
+					.menu-box-tab:hover {
+						background: #50597b;
+						text-decoration: none;
+					}
+					.menu-box-tab:hover .icon {
+						color: #fff;
+					}
+					.menu-box-tab:hover .menu-box-number {
+						background: #e64c65;
+					}
 			.donut-chart-block {
 				height: 434px;
 			}
