@@ -94,6 +94,46 @@ h1, h2, p, a, span{
 		color: #9099b7;
 	}
 
+.input-container {
+	position: relative;
+}
+	input[type=text]{
+		width: 260px;
+		height: 50px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		padding-left: 45px;
+		background: #50597b;
+		color: #fff;
+		border: solid 1px #1f253d;
+		border-radius: 5px;		
+	}
+		input[type=text]::-webkit-input-placeholder { /* WebKit browsers */
+	   		color: #fff;	   		
+	   	}
+		input[type=text]:-moz-input-placeholder { /* Mozilla Firefox 4 to 18 */
+	   		color: #fff;	   
+	   	}
+		input[type=text]::-moz-input-placeholder { /* Mozilla Firefox 19+ */
+	   		color: #fff;
+	   	}
+		input[type=text]:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   		color: #fff;	   	
+	   	}
+	   	input[type=text]:focus {
+	   		outline: none; /* removes the default orange border when focus */
+	   		border: 1px solid #11a8ab;
+	   	}
+	.input-icon {
+		font-size: 22px;
+		position: absolute;
+		left: 31px;
+		top: 10px;
+	}
+		.input-icon.password-icon {
+			left: 35px;
+		}
+
 .horizontal-list {
 	margin: 0;
 	padding: 0;
@@ -119,6 +159,20 @@ h1, h2, p, a, span{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
+
+.button {
+	display: block;
+	width: 175px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+	.button:hover {
+		text-decoration: none;
+	}
 
 .profile-picture {
 	border-radius: 100%;
@@ -648,15 +702,31 @@ h1, h2, p, a, span{
 			.join-newsletter {
 				height: 230px;
 			}
+				.join-newsletter .titular {
+					padding-top: 10px;
+				}
+				.subscribe.button {
+					background: #11a8ab;
+					margin-top: 10px;
+				}
 			.account {
 				height: 390px;
 			}
+				.account .titular {
+					padding: 10px 0;
+				}
+				.sign-in.button {
+					background: #e64c65;
+				}
 			.loading {
 				height: 200px;
 			}
 			.calendar-day {
 				height: 320px;
 			}
+				.add-event.button {
+					background: #4fc4f6;
+				}
 			.calendar-month {
 				height: 380px;
 			}
