@@ -15,7 +15,7 @@
         <div class="main-container">
 
             <!-- HEADER -->
-            <header>
+            <header class="block">
                 <ul class="header-menu horizontal-list">
                     <li>
                         <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Settings</a>
@@ -64,23 +64,23 @@
                 <div class="donut-chart-block block"> <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
                     <h2 class="titular">OS AUDIENCE STATS</h2>
                     <div class="donut-chart">
-                        <p><strong>JUNE</strong><br/>2013</p>
+                        <p class="center-date"><strong>JUNE</strong><br/>2013</p>
                     </div>
                     <ul class="os-percentages horizontal-list">
                         <li>
-                            <p class="scnd-font-color">iOS</p>
+                            <p class="ios os scnd-font-color">iOS</p>
                             <p class="os-percentage">21<sup>%</sup></p>
                         </li>
                         <li>
-                            <p class="scnd-font-color">Mac</p>
+                            <p class="mac os scnd-font-color">Mac</p>
                             <p class="os-percentage">48<sup>%</sup></p>
                         </li>
                         <li>
-                            <p class="scnd-font-color">Linux</p>
+                            <p class="linux os scnd-font-color">Linux</p>
                             <p class="os-percentage">9<sup>%</sup></p>
                         </li>
                         <li>
-                            <p class="scnd-font-color">Win</p>
+                            <p class="win os scnd-font-color">Win</p>
                             <p class="os-percentage">32<sup>%</sup></p>
                         </li>
                     </ul>
@@ -88,22 +88,22 @@
                 <div class="line-chart-block block clear"> <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
                     <div class="line-chart"></div>
                     <ul class="time-lenght horizontal-list">
-                        <li><a href="#14">Week</a></li>
-                        <li><a href="#15">Month</a></li>
-                        <li><a href="#16">Year</a></li>
+                        <li><a class="time-lenght-btn" href="#14">Week</a></li>
+                        <li><a class="time-lenght-btn" href="#15">Month</a></li>
+                        <li><a class="time-lenght-btn" href="#16">Year</a></li>
                     </ul>
                     <ul class="month-data clear">
                         <li>
                             <p>APR<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="increment">+ </span>21<sup>%</sup></p>
+                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
                         </li>
                         <li>
                             <p>MAY<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="increment">+ </span>48<sup>%</sup></p>
+                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
                         </li>
                         <li>
                             <p>JUN<span class="scnd-font-color"> 2013</span></p>
-                            <p><span class="increment">+ </span>35<sup>%</sup></p>
+                            <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
                         </li>
                     </ul>
                     <!-- 
@@ -140,65 +140,79 @@
                 <div class="media block"> <!-- MEDIA (LEFT-CONTAINER) -->
                     <div class="media-display"></div>
                     <div class="media-control-bar">
-                        <a class="media-btn scnd-font-color" href="#23"><span class="fontawesome-play"></span></a>
+                        <a class="media-btn play" href="#23"><span class="fontawesome-play scnd-font-color"></span></a>
                         <p class="time-passed">4:15 <span class="time-duration scnd-font-color">/ 9:23</span></p>
-                        <a class="media-btn scnd-font-color" href="#24"><span class="fontawesome-volume-up"></span></a>
-                        <a class="media-btn scnd-font-color" href="#25"><span class="fontawesome-resize-full"></span></a>
+                        <a class="media-btn volume" href="#24"><span class="fontawesome-volume-up scnd-font-color"></span></a>
+                        <a class="media-btn resize" href="#25"><span class="fontawesome-resize-full scnd-font-color"></span></a>
                     </div>
                 </div>
                 <ul class="social horizontal-list block"> <!-- SOCIAL (LEFT-CONTAINER) -->
-                    <li class="facebook"><span class="zocial-facebook"></span><p>248k</p></li>
-                    <li class="twitter"><span class="zocial-twitter"></span><p>30k</p></li>
-                    <li class="googleplus"><span class="zocial-googleplus"></span><p>124k</p></li>
-                    <li class="mailbox"><span class="fontawesome-envelope"></span><p>89k</p></li>
+                    <li class="facebook"><p class="icon"><span class="zocial-facebook"></span></p><p class="number">248k</p></li>
+                    <li class="twitter"><p class="icon"><span class="zocial-twitter"></span></p><p class="number">30k</p></li>
+                    <li class="googleplus"><p class="icon"><span class="zocial-googleplus"></span></p><p class="number">124k</p></li>
+                    <li class="mailbox"><p class="icon"><span class="fontawesome-envelope"></span></p><p class="number">89k</p></li>
                 </ul>
             </div>
 
             <!-- MIDDLE-CONTAINER -->
             <div class="middle-container container">
                 <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
-                    <a href="#28"><span class="entypo-plus scnd-font-color"></span></a>
-                    <div class="profile-picture big-profile-picture">
+                    <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
+                    <div class="profile-picture big-profile-picture clear">
                         <img width="150px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg" >
                     </div>
-                    <h1>Anne Hathaway</h1>
-                    <p class="scnd-font-color">Lorem ipsum dolor sit amet consectetuer adipiscing</p>
+                    <h1 class="user-name">Anne Hathaway</h1>
+                    <div class="profile-description">
+                        <p class="scnd-font-color">Lorem ipsum dolor sit amet consectetuer adipiscing</p>
+                    </div>
                     <ul class="profile-options horizontal-list">
-                        <li><p><span class="fontawesome-comment-alt scnd-font-color"></span>23</li></p>
-                        <li><p><span class="fontawesome-eye-open scnd-font-color"></span>841</li></p>
-                        <li id="likes"><p><span class="fontawesome-heart-empty scnd-font-color"></span>49</li></p>
+                        <li><a class="comments" href="#40"><p><span class="icon fontawesome-comment-alt scnd-font-color"></span>23</li></p></a>
+                        <li><a class="views" href="#41"><p><span class="icon fontawesome-eye-open scnd-font-color"></span>841</li></p></a>
+                        <li><a class="likes" href="#42"><p><span class="icon fontawesome-heart-empty scnd-font-color"></span>49</li></p></a>
                     </ul>
                 </div>
                 <div class="weather block clear"> <!-- WEATHER (MIDDLE-CONTAINER) -->
-                    <h2 class="titular"><span></span><strong>CLUJ-NAPOCA</strong>/RO</h2>
+                    <h2 class="titular"><span class="icon entypo-location"></span><strong>CLUJ-NAPOCA</strong>/RO</h2>
                     <div class="current-day">
-                        <p>FRI 29/06</p>
-                        <p>24º<span class="icon-cloudy"></span></p>
+                        <p class="current-day-date">FRI 29/06</p>
+                        <p class="current-day-temperature">24º<span class="icon-cloudy"></span></p>
                     </div>
                     <ul class="next-days">
                         <li>
-                            <p>SAT <span class="scnd-font-color">29/06</span></p>
-                            <p>25º<span class="icon-cloudy scnd-font-color"></span></p>
+                            <a href="#43">
+                                <p class="next-days-date"><span class="day">SAT</span> <span class="scnd-font-color">29/06</span></p>
+                                <p class="next-days-temperature">25º<span class="icon icon-cloudy scnd-font-color"></span></p>
+                            </a>
                         </li>
                         <li>
-                            <p><span class="holyday">SUN </span><span class="scnd-font-color">30/06</span></p>
-                            <p>22º<span class="icon-cloudy2 scnd-font-color"></span></p>
+                            <a href="#44">
+                                <p class="next-days-date"><span class="day">SUN</span> <span class="scnd-font-color">30/06</span></p>
+                                <p class="next-days-temperature">22º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
+                            </a>
                         </li>
                         <li>
-                            <p>MON <span class="scnd-font-color">01/07</span></p>
-                            <p>24º<span class="icon-cloudy2 scnd-font-color"></span></p>
+                            <a href="#45">
+                                <p class="next-days-date"><span class="day">MON</span> <span class="scnd-font-color">01/07</span></p>
+                                <p class="next-days-temperature">24º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
+                            </a>
                         </li>
                         <li>
-                            <p>TUE <span class="scnd-font-color">02/07</span></p>
-                            <p>26º<span class="icon-cloudy scnd-font-color"></span></p>
+                            <a href="#46">
+                                <p class="next-days-date"><span class="day">TUE</span> <span class="scnd-font-color">02/07</span></p>
+                                <p class="next-days-temperature">26º<span class="icon icon-cloudy scnd-font-color"></span></p>
+                            </a>
                         </li>
                         <li>
-                            <p>WED <span class="scnd-font-color">03/07</span></p>
-                            <p>27º<span class="icon-sun scnd-font-color"></span></p>
+                            <a href="">
+                                <p class="next-days-date"><span class="day">WED</span> <span class="scnd-font-color">03/07</span></p>
+                                <p class="next-days-temperature">27º<span class="icon icon-sun scnd-font-color"></span></p>
+                            </a>
                         </li>
                         <li>
-                            <p>THU <span class="scnd-font-color">04/07</span></p>
-                            <p>29º<span class="icon-sun scnd-font-color"></span></p>
+                            <a href="">
+                                <p class="next-days-date"><span class="day">THU</span> <span class="scnd-font-color">04/07</span></p>
+                                <p class="next-days-temperature">29º<span class="icon icon-sun scnd-font-color"></span></p>
+                            </a>
                         </li>
                     </ul>
                 </div>
