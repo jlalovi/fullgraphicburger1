@@ -240,7 +240,7 @@ h1, h2, p, a, span{
 	height: 1725px;
 	margin: 6em auto;
 }	
-	/** HEADER **/
+	/*********************************************** HEADER ***********************************************/
 	header {
 		height: 80px;
 	}
@@ -367,12 +367,27 @@ h1, h2, p, a, span{
 			.donut-chart-block {
 				height: 434px;
 			}
-				.donut-chart {
-					height: 292px;
+				.donut-chart-block .titular {
+					padding: 10px 0;
 				}
-					.center-date {
-						margin: 0;
+				.donut-chart {
+					height: 270px;
+				}
+					#donut-chart {
+						position: relative;
+						width: 205px;
+						height: 205px;
+						margin: 0 auto;
+						border: 40px solid #11a8ab;
+						border-radius: 100%
 					}
+						.center-date {
+							position: absolute;
+							text-align: center;
+							font-size: 28px;
+							top: 0px;
+							right: 30px;
+						}
 				.os-percentages li {
 					width: 75px;
 					border-left: 1px solid #394264;
@@ -447,10 +462,22 @@ h1, h2, p, a, span{
 			.media {
 				height: 216px;
 			}
-				.media-display {
+				#media-display {
+					position: relative;
 					height: 180px;
 					background: #787878;
 				}
+					#media-display .play {
+						position: absolute;
+						top: 75px;
+						right: 40px;
+						border: 2px solid #fff;
+						border-radius: 100%;
+						padding: 2px 5px 2px 9px;
+					}
+						#media-display .play:hover {
+							border: 2px solid #e64c65;
+					}
 				.media-control-bar {
 					padding: 6px 0 0 15px;
 				}
