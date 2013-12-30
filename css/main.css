@@ -169,10 +169,48 @@ h1, h2, p, a, span{
 	text-align: center;
 	margin: 0 auto;
 	border-radius: 5px;
+	-webkit-transition: background .3s;
+	transition: background .3s;
 }
 	.button:hover {
 		text-decoration: none;
 	}
+
+.arrow-btn-container {
+	position: relative;
+}
+	.arrow-btn {
+		position: absolute;
+		display: block;
+		width: 60px;
+		height: 60px;
+		-webkit-transition: background .3s;
+		transition: background .3s;
+	}
+		.arrow-btn:hover {
+			text-decoration: none;
+		}
+		.arrow-btn.left {
+			border-top-left-radius: 5px;
+		}
+		.arrow-btn.right {
+			border-top-right-radius: 5px;
+			right: 0;
+			top: 0;
+		}
+		.arrow-btn .icon {
+			display: block;
+			font-size: 18px;
+			border: 2px solid #fff;
+			border-radius: 100%;
+			line-height: 17px;
+			width: 21px;
+			margin: 20px auto;
+			text-align: center;
+		}
+			.arrow-btn.left .icon {
+				padding-right: 2px;
+			}
 
 .profile-picture {
 	border-radius: 100%;
@@ -199,6 +237,7 @@ h1, h2, p, a, span{
 .main-container {
 	font-family: 'Ubuntu', sans-serif;
 	width: 950px;
+	height: 1725px;
 	margin: 6em auto;
 }	
 	/** HEADER **/
@@ -276,7 +315,7 @@ h1, h2, p, a, span{
 			background: #394264;
 			border-radius: 5px;
 		}
-		/** LEFT CONTAINER **/
+		/******************************************** LEFT CONTAINER *****************************************/
 		.left-container {}
 			.menu-box {
 				height: 360px;
@@ -486,7 +525,7 @@ h1, h2, p, a, span{
 							background: #363f61;
 							border-bottom-right-radius: 5px;
 						}
-		/** MIDDLE CONTAINER **/
+		/************************************************** MIDDLE CONTAINER **********************************/
 		.middle-container {
 			margin: 0 25px;			
 		}
@@ -537,6 +576,12 @@ h1, h2, p, a, span{
 								text-decoration: none;
 								background: #50597b;
 							}
+							.profile-options a:hover.comments .icon {
+								color: #fcb150;
+							}
+							.profile-options a:hover.views .icon {
+								color: #11a8ab;
+							}
 							.profile-options a:hover.likes .icon {
 								color: #e64c65;
 							}
@@ -544,13 +589,13 @@ h1, h2, p, a, span{
 								padding-right: 10px;
 							}
 							.profile-options .comments {
-								border-top: 4px solid #e64c65;
+								border-top: 4px solid #fcb150;
 							}
 							.profile-options .views {
 								border-top: 4px solid #11a8ab;
 							}
 							.profile-options .likes {
-								border-top: 4px solid #fcb150;
+								border-top: 4px solid #e64c65;
 							}
 			.weather {
 				height: 555px;
@@ -642,9 +687,7 @@ h1, h2, p, a, span{
 					margin-bottom: 12px;
 				}
 				.middle-container .social a {
-					line-height: 60px;
-					-webkit-transition: background .3s;
-					transition: background .3s;					
+					line-height: 60px;			
 				}
 					.middle-container .social a:hover {
 						text-decoration: none;
@@ -654,6 +697,8 @@ h1, h2, p, a, span{
 					}
 						.middle-container .social .facebook {
 							background: #3468af;
+							-webkit-transition: background .3s;
+							transition: background .3s;
 						}
 							.middle-container .social a:hover .facebook {
 								background: #1a4e95;
@@ -663,6 +708,8 @@ h1, h2, p, a, span{
 							}
 						.middle-container .social .twitter {
 							background: #4fc4f6;
+							-webkit-transition: background .3s;
+							transition: background .3s;
 						}
 							.middle-container .social a:hover .twitter {
 								background: #35aadc;
@@ -672,6 +719,8 @@ h1, h2, p, a, span{
 							}
 						.middle-container .social .googleplus {
 							background: #e64c65;
+							-webkit-transition: background .3s;
+							transition: background .3s;
 						}
 							.middle-container .social a:hover .googleplus {
 								background: #cc324b;
@@ -697,7 +746,7 @@ h1, h2, p, a, span{
 					.middle-container .social .icon.googleplus {
 						background: #cc324b;						
 					}
-		/** RIGHT CONTAINER **/
+		/********************************************* RIGHT CONTAINER ****************************************/
 		.right-container {}
 			.join-newsletter {
 				height: 230px;
@@ -709,6 +758,9 @@ h1, h2, p, a, span{
 					background: #11a8ab;
 					margin-top: 10px;
 				}
+					.subscribe.button:hover {
+						background: #0F9295;
+					}
 			.account {
 				height: 390px;
 			}
@@ -717,16 +769,122 @@ h1, h2, p, a, span{
 				}
 				.sign-in.button {
 					background: #e64c65;
+					margin: 10px auto;
 				}
+					.sign-in.button:hover {
+						background: #cc324b;
+					}
+				.account p { 
+					text-align: center;
+				}
+				.fb-sign-in {
+					margin-top: 25px;
+					display: block;
+					line-height: 50px;
+					background: #3468af;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+					-webkit-transition: background .3s;
+					transition: background .3s;
+				}
+					.fb-sign-in:hover {
+						background: #1a4e95;
+						text-decoration: none;
+					}
+				.fb-sign-in .icon {	
+					line-height: 20px;
+					font-size: 12px;
+					padding-right: 3px;
+				}
+					.fb-border {
+						display: inline-block;
+						width: 23px;
+						line-height: 20px;
+						border: 2px solid #fff;
+						border-radius: 100%;
+						margin-right: 10px;
+					}
 			.loading {
 				height: 200px;
+				padding-top: 35px;
 			}
+				.loading p {
+					display: inline-block;
+					padding-left: 30px;
+					margin: 5px 0 20px;
+				}
+					.loading .icon {
+						padding-right: 15px;
+					}
+					.loading .percentage {
+						float: right;
+						padding: 6px 35px 0 0;
+					}
+				.loading .progress-bar {
+					width: 250px;
+					height: 20px;
+					background: #50597b;
+					border-radius: 5px;
+					margin: 0 auto;
+				}
+					.progress-bar.downloading {
+						background: -webkit-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* Chrome10+,Safari5.1+ */
+						background: -ms-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* IE10+ */
+						background: linear-gradient(to right, #11a8ab 81%,#50597b 81%); /* W3C */
+					}
+					.progress-bar.uploading {
+						background: -webkit-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* Chrome10+,Safari5.1+ */
+						background: -ms-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* IE10+ */
+						background: linear-gradient(to right, #4fc4f6 43%,#50597b 43%); /* W3C */
+					}
 			.calendar-day {
 				height: 320px;
+				background: #3468af;
 			}
+				.calendar-day .titular {
+					background: #1a4e95;
+				}
+					.calendar-day .arrow-btn:hover {
+						background: #16417E;
+					}
+				.calendar-day .the-day {
+					margin: 0;
+					text-align: center;
+					font-size: 146px;
+				}
 				.add-event.button {
 					background: #4fc4f6;
 				}
+					.add-event.button:hover {
+						background: #35aadc;
+					}
 			.calendar-month {
 				height: 380px;
 			}
+				.calendar-month .titular {
+					background: #3468af;
+				}
+					.calendar-month .arrow-btn:hover {
+						background: #1a4e95;
+					}
+				.calendar {
+					margin: 28px 15px;
+					text-align: center;
+				}
+					.calendar a {
+						font-size: 17px;
+					}
+					.calendar td, .calendar th {
+						width: 40px;
+						height: 38px;						
+					}
+					.calendar .days-week {
+						color: #4fc4f6;
+					}
+					.calendar .today {
+						display: block;
+						width: 34px;
+						line-height: 34px;
+						background: #e64c65;
+						border-radius: 100%;
+					}
